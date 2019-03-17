@@ -22,7 +22,7 @@ function currentLine(peopleLine){
   }
   else {
   for (var i = 1; i < peopleLine.length + 1; i++){
-    array.push(` ${i}. ${peopleLine[i]}`);
+    array.push(` ${i}. ${peopleLine[i - 1]}`);
   }
   return `The line is currently:${array}`;
 }
