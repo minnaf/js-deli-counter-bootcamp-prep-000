@@ -21,8 +21,8 @@ function currentLine(peopleLine){
     return "The line is currently empty.";
   }
   else {
-  for (var i = 0; i < peopleLine.length; i++){
-    array.push(` ${i + 1}. ${peopleLine[i]}`);
+  for (var i = 1; i < peopleLine.length + 1; i++){
+    array.push(` ${i}. ${peopleLine[i]}`);
   }
   return `The line is currently:${array}`;
 }
